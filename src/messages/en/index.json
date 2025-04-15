@@ -1,0 +1,233 @@
+{
+  "navigation": {
+    "home": "Home",
+    "pois": "POIs",
+    "map": "Map",
+    "about": "About",
+    "addPoi": "Add POI"
+  },
+  "home": {
+    "hero": {
+      "title": "Discover the wonders of Cameroon",
+      "subtitle": "Explore points of interest across the country of Africa in miniature",
+      "exploreMap": "Explore the map",
+      "viewAllPois": "View all POIs"
+    },
+    "about": {
+      "title": "About the project",
+      "problem": {
+        "title": "Problem solved",
+        "content": "The lack of centralized and interactive information on points of interest in Cameroon makes it difficult to discover the hidden treasures of the country. Our platform fills this gap by offering an immersive and comprehensive experience."
+      },
+      "vision": {
+        "title": "Global vision",
+        "content": "To become the essential reference for discovering Cameroon's heritage, enhancing the cultural, natural, and historical richness of the country through an innovative technological platform accessible to all."
+      },
+      "mission": {
+        "title": "Our mission",
+        "content": "Map, document, and promote Cameroon's points of interest to facilitate their discovery by tourists, researchers, and locals, while preserving and enhancing the national heritage."
+      }
+    },
+    "features": {
+      "title": "Features",
+      "subtitle": "Discover everything our platform can offer you",
+      "interactiveMap": {
+        "title": "Interactive map",
+        "content": "Explore Cameroon through an interactive map with points of interest categorized and easily identifiable."
+      },
+      "advancedSearch": {
+        "title": "Advanced search",
+        "content": "Quickly find what interests you thanks to our keyword search system and category filtering."
+      },
+      "imageGalleries": {
+        "title": "Image galleries",
+        "content": "View each point of interest through high-quality image galleries to better prepare your visit."
+      },
+      "poiCreation": {
+        "title": "POI creation",
+        "content": "Contribute to the enrichment of the platform by adding your own points of interest with descriptions and images."
+      },
+      "culturalStories": {
+        "title": "Cultural stories",
+        "content": "Discover the history and culture behind each place through our detailed and enriching GeoStories."
+      },
+      "routes": {
+        "title": "Routes",
+        "content": "Plan your trip with our route function that shows you the shortest path between points of interest."
+      }
+    },
+    "popularPois": {
+      "title": "Popular points of interest",
+      "subtitle": "Discover some of the most fascinating places in Cameroon",
+      "learnMore": "Learn more",
+      "viewAll": "View all points of interest"
+    },
+    "cta": {
+      "title": "Ready to explore Cameroon?",
+      "subtitle": "Start your adventure now by discovering our interactive map",
+      "exploreMap": "Explore the map"
+    }
+  },
+  "pois": {
+    "title": "Points of interest in Cameroon",
+    "subtitle": "Discover the most fascinating places in Cameroon, from natural wonders to historical and cultural sites.",
+    "noResults": {
+      "title": "No results found",
+      "content": "Try modifying your search or filter criteria."
+    }
+  },
+  "poiDetail": {
+    "breadcrumb": {
+      "home": "Home",
+      "pois": "Points of interest"
+    },
+    "details": "Details",
+    "category": "Category",
+    "coordinates": "Coordinates",
+    "detailedDescription": "Detailed description",
+    "actions": "Actions",
+    "viewGeostory": "View GeoStory",
+    "takeMeThere": "Take me there",
+    "viewOnGoogleMaps": "View on Google Maps",
+    "location": "Location",
+    "nearbyPois": "Nearby points of interest",
+    "routeDetails": {
+      "title": "Route details",
+      "destination": "Destination",
+      "distance": "Distance",
+      "duration": "Estimated duration",
+      "price": "Estimated price",
+      "additionalInfo": "Additional information"
+    }
+  },
+  "geostory": {
+    "breadcrumb": {
+      "home": "Home",
+      "pois": "Points of interest",
+      "geostory": "GeoStory"
+    },
+    "quickFacts": {
+      "title": "Quick facts",
+      "location": "Location",
+      "type": "Type",
+      "bestTime": "Best time to visit",
+      "visitDuration": "Visit duration"
+    },
+    "actions": {
+      "viewPoiDetails": "View POI details",
+      "viewOnMap": "View on map"
+    },
+    "relatedPois": "Other points of interest that might interest you"
+  },
+  "map": {
+    "title": "Map of points of interest in Cameroon",
+    "addPoi": "Add POI",
+    "cancel": "Cancel",
+    "viewDetails": "View more details"
+  },
+  "about": {
+    "title": "About CameroonPOI",
+    "subtitle": "Discover our mission, vision, and the team behind the Cameroon points of interest platform.",
+    "ourStory": {
+      "title": "Our story",
+      "content1": "CameroonPOI was born from a shared passion for Cameroon and its cultural, natural, and historical richness. Faced with the observation of a lack of centralized and interactive resources to discover the wonders of the country, we decided to create a platform that would allow everyone to explore, contribute, and share the hidden treasures of Cameroon.",
+      "content2": "Launched in 2025, our project aims to become the reference in terms of discovering Cameroon's heritage, offering an immersive and informative user experience. We firmly believe that technology can be a powerful vector for cultural enhancement and tourism promotion.",
+      "content3": "Today, CameroonPOI continues to grow thanks to an active and passionate community that contributes daily to enriching our database of points of interest."
+    },
+    "ourMission": {
+      "title": "Our mission",
+      "document": {
+        "title": "Document",
+        "content": "Census, catalog, and document points of interest throughout Cameroon, from the most well-known sites to hidden treasures."
+      },
+      "share": {
+        "title": "Share",
+        "content": "Make the richness of Cameroon's heritage accessible to all through an interactive, intuitive, and informative platform."
+      },
+      "preserve": {
+        "title": "Preserve",
+        "content": "Contribute to the preservation and enhancement of Cameroon's cultural, natural, and historical heritage for future generations."
+      }
+    },
+    "ourTeam": {
+      "title": "Our team",
+      "founder": "Founder & Director",
+      "contentManager": "Content & Research Manager",
+      "leadDeveloper": "Lead Developer"
+    },
+    "contactUs": {
+      "title": "Contact us",
+      "contactInfo": "Contact information",
+      "followUs": "Follow us",
+      "sendMessage": "Send us a message",
+      "fullName": "Full name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send message"
+    },
+    "cta": {
+      "title": "Ready to explore Cameroon?",
+      "subtitle": "Join our community and start discovering the wonders of Cameroon today.",
+      "exploreMap": "Explore the map",
+      "viewPois": "View points of interest"
+    }
+  },
+  "forms": {
+    "addPoi": {
+      "title": "Add a new point of interest",
+      "name": "Name",
+      "description": "Description",
+      "category": "Category",
+      "additionalDetails": "Additional details",
+      "image": "Image",
+      "location": "Location (click on the map to select)",
+      "selectedCoordinates": "Selected coordinates",
+      "pleaseSelectLocation": "Please select a location on the map",
+      "cancel": "Cancel",
+      "add": "Add"
+    },
+    "route": {
+      "title": "Calculate a route",
+      "startingPoint": "Starting point",
+      "destination": "Destination",
+      "selectDestination": "Select a destination",
+      "additionalInfo": "Additional information",
+      "additionalInfoPlaceholder": "Travel preferences, special needs, etc.",
+      "cancel": "Cancel",
+      "calculate": "Calculate route",
+      "calculating": "Calculating...",
+      "calculatingMessage": "Route calculation in progress, please wait..."
+    },
+    "search": {
+      "placeholder": "Search for a point of interest...",
+      "filter": "Filter",
+      "filterByCategory": "Filter by category",
+      "clearFilters": "Clear filters",
+      "clearAll": "Clear all"
+    }
+  },
+  "categories": {
+    "historical": "Historical",
+    "natural": "Natural",
+    "cultural": "Cultural",
+    "religious": "Religious",
+    "entertainment": "Entertainment",
+    "restaurant": "Restaurant",
+    "hotel": "Hotel",
+    "other": "Other"
+  },
+  "common": {
+    "loading": "Loading...",
+    "notFound": "Not found",
+    "back": "Back",
+    "more": "More",
+    "addedOn": "Added on"
+  },
+  "language": {
+    "en": "English",
+    "fr": "French",
+    "de": "German",
+    "es": "Spanish",
+    "selectLanguage": "Select language"
+  }
+}

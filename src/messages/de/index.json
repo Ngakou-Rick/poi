@@ -1,0 +1,233 @@
+{
+  "navigation": {
+    "home": "Startseite",
+    "pois": "POIs",
+    "map": "Karte",
+    "about": "Über uns",
+    "addPoi": "POI hinzufügen"
+  },
+  "home": {
+    "hero": {
+      "title": "Entdecken Sie die Wunder Kameruns",
+      "subtitle": "Erkunden Sie Sehenswürdigkeiten im Land des Afrika in Miniatur",
+      "exploreMap": "Karte erkunden",
+      "viewAllPois": "Alle POIs anzeigen"
+    },
+    "about": {
+      "title": "Über das Projekt",
+      "problem": {
+        "title": "Gelöstes Problem",
+        "content": "Der Mangel an zentralisierten und interaktiven Informationen über Sehenswürdigkeiten in Kamerun macht es schwierig, die verborgenen Schätze des Landes zu entdecken. Unsere Plattform füllt diese Lücke, indem sie ein immersives und umfassendes Erlebnis bietet."
+      },
+      "vision": {
+        "title": "Globale Vision",
+        "content": "Die unverzichtbare Referenz für die Entdeckung des kamerunischen Erbes werden, indem der kulturelle, natürliche und historische Reichtum des Landes durch eine innovative und für alle zugängliche technologische Plattform aufgewertet wird."
+      },
+      "mission": {
+        "title": "Unsere Mission",
+        "content": "Kartierung, Dokumentation und Förderung von Sehenswürdigkeiten in Kamerun, um ihre Entdeckung durch Touristen, Forscher und Einheimische zu erleichtern und gleichzeitig das nationale Erbe zu bewahren und aufzuwerten."
+      }
+    },
+    "features": {
+      "title": "Funktionen",
+      "subtitle": "Entdecken Sie alles, was unsere Plattform Ihnen bieten kann",
+      "interactiveMap": {
+        "title": "Interaktive Karte",
+        "content": "Erkunden Sie Kamerun über eine interaktive Karte mit kategorisierten und leicht identifizierbaren Sehenswürdigkeiten."
+      },
+      "advancedSearch": {
+        "title": "Erweiterte Suche",
+        "content": "Finden Sie schnell, was Sie interessiert, dank unseres Suchsystems mit Schlüsselwörtern und Kategoriefilterung."
+      },
+      "imageGalleries": {
+        "title": "Bildergalerien",
+        "content": "Betrachten Sie jede Sehenswürdigkeit durch hochwertige Bildergalerien, um Ihren Besuch besser vorzubereiten."
+      },
+      "poiCreation": {
+        "title": "POI-Erstellung",
+        "content": "Tragen Sie zur Bereicherung der Plattform bei, indem Sie Ihre eigenen Sehenswürdigkeiten mit Beschreibungen und Bildern hinzufügen."
+      },
+      "culturalStories": {
+        "title": "Kulturgeschichten",
+        "content": "Entdecken Sie die Geschichte und Kultur hinter jedem Ort durch unsere detaillierten und bereichernden GeoStories."
+      },
+      "routes": {
+        "title": "Routen",
+        "content": "Planen Sie Ihre Reise mit unserer Routenfunktion, die Ihnen den kürzesten Weg zwischen Sehenswürdigkeiten zeigt."
+      }
+    },
+    "popularPois": {
+      "title": "Beliebte Sehenswürdigkeiten",
+      "subtitle": "Entdecken Sie einige der faszinierendsten Orte in Kamerun",
+      "learnMore": "Mehr erfahren",
+      "viewAll": "Alle Sehenswürdigkeiten anzeigen"
+    },
+    "cta": {
+      "title": "Bereit, Kamerun zu erkunden?",
+      "subtitle": "Beginnen Sie Ihr Abenteuer jetzt, indem Sie unsere interaktive Karte entdecken",
+      "exploreMap": "Karte erkunden"
+    }
+  },
+  "pois": {
+    "title": "Sehenswürdigkeiten in Kamerun",
+    "subtitle": "Entdecken Sie die faszinierendsten Orte in Kamerun, von Naturwundern bis hin zu historischen und kulturellen Stätten.",
+    "noResults": {
+      "title": "Keine Ergebnisse gefunden",
+      "content": "Versuchen Sie, Ihre Such- oder Filterkriterien zu ändern."
+    }
+  },
+  "poiDetail": {
+    "breadcrumb": {
+      "home": "Startseite",
+      "pois": "Sehenswürdigkeiten"
+    },
+    "details": "Details",
+    "category": "Kategorie",
+    "coordinates": "Koordinaten",
+    "detailedDescription": "Detaillierte Beschreibung",
+    "actions": "Aktionen",
+    "viewGeostory": "GeoStory anzeigen",
+    "takeMeThere": "Bring mich dorthin",
+    "viewOnGoogleMaps": "Auf Google Maps anzeigen",
+    "location": "Standort",
+    "nearbyPois": "Sehenswürdigkeiten in der Nähe",
+    "routeDetails": {
+      "title": "Routendetails",
+      "destination": "Ziel",
+      "distance": "Entfernung",
+      "duration": "Geschätzte Dauer",
+      "price": "Geschätzter Preis",
+      "additionalInfo": "Zusätzliche Informationen"
+    }
+  },
+  "geostory": {
+    "breadcrumb": {
+      "home": "Startseite",
+      "pois": "Sehenswürdigkeiten",
+      "geostory": "GeoStory"
+    },
+    "quickFacts": {
+      "title": "Schnelle Fakten",
+      "location": "Standort",
+      "type": "Typ",
+      "bestTime": "Beste Besuchszeit",
+      "visitDuration": "Besuchsdauer"
+    },
+    "actions": {
+      "viewPoiDetails": "POI-Details anzeigen",
+      "viewOnMap": "Auf der Karte anzeigen"
+    },
+    "relatedPois": "Andere Sehenswürdigkeiten, die Sie interessieren könnten"
+  },
+  "map": {
+    "title": "Karte der Sehenswürdigkeiten in Kamerun",
+    "addPoi": "POI hinzufügen",
+    "cancel": "Abbrechen",
+    "viewDetails": "Mehr Details anzeigen"
+  },
+  "about": {
+    "title": "Über CameroonPOI",
+    "subtitle": "Entdecken Sie unsere Mission, Vision und das Team hinter der Plattform für Sehenswürdigkeiten in Kamerun.",
+    "ourStory": {
+      "title": "Unsere Geschichte",
+      "content1": "CameroonPOI entstand aus einer gemeinsamen Leidenschaft für Kamerun und seinen kulturellen, natürlichen und historischen Reichtum. Angesichts des Mangels an zentralisierten und interaktiven Ressourcen zur Entdeckung der Wunder des Landes haben wir beschlossen, eine Plattform zu schaffen, die es jedem ermöglicht, die verborgenen Schätze Kameruns zu erkunden, zu ihnen beizutragen und sie zu teilen.",
+      "content2": "Unser 2025 gestartetes Projekt zielt darauf ab, die Referenz für die Entdeckung des kamerunischen Erbes zu werden, indem es ein immersives und informatives Benutzererlebnis bietet. Wir glauben fest daran, dass Technologie ein mächtiges Mittel zur kulturellen Aufwertung und Tourismusförderung sein kann.",
+      "content3": "Heute wächst CameroonPOI weiter dank einer aktiven und leidenschaftlichen Gemeinschaft, die täglich dazu beiträgt, unsere Datenbank mit Sehenswürdigkeiten zu bereichern."
+    },
+    "ourMission": {
+      "title": "Unsere Mission",
+      "document": {
+        "title": "Dokumentieren",
+        "content": "Erfassung, Katalogisierung und Dokumentation von Sehenswürdigkeiten in ganz Kamerun, von den bekanntesten Orten bis hin zu verborgenen Schätzen."
+      },
+      "share": {
+        "title": "Teilen",
+        "content": "Den Reichtum des kamerunischen Erbes durch eine interaktive, intuitive und informative Plattform für alle zugänglich machen."
+      },
+      "preserve": {
+        "title": "Bewahren",
+        "content": "Beitrag zur Erhaltung und Aufwertung des kulturellen, natürlichen und historischen Erbes Kameruns für zukünftige Generationen."
+      }
+    },
+    "ourTeam": {
+      "title": "Unser Team",
+      "founder": "Gründer & Direktor",
+      "contentManager": "Inhalts- & Forschungsmanager",
+      "leadDeveloper": "Leitender Entwickler"
+    },
+    "contactUs": {
+      "title": "Kontaktieren Sie uns",
+      "contactInfo": "Kontaktinformationen",
+      "followUs": "Folgen Sie uns",
+      "sendMessage": "Senden Sie uns eine Nachricht",
+      "fullName": "Vollständiger Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "send": "Nachricht senden"
+    },
+    "cta": {
+      "title": "Bereit, Kamerun zu erkunden?",
+      "subtitle": "Treten Sie unserer Gemeinschaft bei und beginnen Sie noch heute, die Wunder Kameruns zu entdecken.",
+      "exploreMap": "Karte erkunden",
+      "viewPois": "Sehenswürdigkeiten anzeigen"
+    }
+  },
+  "forms": {
+    "addPoi": {
+      "title": "Neue Sehenswürdigkeit hinzufügen",
+      "name": "Name",
+      "description": "Beschreibung",
+      "category": "Kategorie",
+      "additionalDetails": "Zusätzliche Details",
+      "image": "Bild",
+      "location": "Standort (klicken Sie auf die Karte, um auszuwählen)",
+      "selectedCoordinates": "Ausgewählte Koordinaten",
+      "pleaseSelectLocation": "Bitte wählen Sie einen Standort auf der Karte",
+      "cancel": "Abbrechen",
+      "add": "Hinzufügen"
+    },
+    "route": {
+      "title": "Route berechnen",
+      "startingPoint": "Ausgangspunkt",
+      "destination": "Ziel",
+      "selectDestination": "Wählen Sie ein Ziel",
+      "additionalInfo": "Zusätzliche Informationen",
+      "additionalInfoPlaceholder": "Reisepräferenzen, besondere Bedürfnisse usw.",
+      "cancel": "Abbrechen",
+      "calculate": "Route berechnen",
+      "calculating": "Berechnung läuft...",
+      "calculatingMessage": "Routenberechnung läuft, bitte warten..."
+    },
+    "search": {
+      "placeholder": "Nach einer Sehenswürdigkeit suchen...",
+      "filter": "Filtern",
+      "filterByCategory": "Nach Kategorie filtern",
+      "clearFilters": "Filter löschen",
+      "clearAll": "Alles löschen"
+    }
+  },
+  "categories": {
+    "historical": "Historisch",
+    "natural": "Natürlich",
+    "cultural": "Kulturell",
+    "religious": "Religiös",
+    "entertainment": "Unterhaltung",
+    "restaurant": "Restaurant",
+    "hotel": "Hotel",
+    "other": "Andere"
+  },
+  "common": {
+    "loading": "Wird geladen...",
+    "notFound": "Nicht gefunden",
+    "back": "Zurück",
+    "more": "Mehr",
+    "addedOn": "Hinzugefügt am"
+  },
+  "language": {
+    "en": "Englisch",
+    "fr": "Französisch",
+    "de": "Deutsch",
+    "es": "Spanisch",
+    "selectLanguage": "Sprache auswählen"
+  }
+}
