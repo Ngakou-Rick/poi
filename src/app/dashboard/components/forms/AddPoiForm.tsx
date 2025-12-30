@@ -263,8 +263,8 @@ export default function AddPoiForm({
               name="latitude"
               step="0.0001"
               value={formData.coordinates?.[0] || ""}
-              onChange={(e) => handleCoordinatesChange([parseFloat(e.target.value), formData.coordinates?.[1] || 0])}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              readOnly
+              className="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-50 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
             />
           </div>
           <div>
@@ -277,8 +277,8 @@ export default function AddPoiForm({
               name="longitude"
               step="0.0001"
               value={formData.coordinates?.[1] || ""}
-              onChange={(e) => handleCoordinatesChange([formData.coordinates?.[0] || 0, parseFloat(e.target.value)])}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              readOnly
+              className="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-50 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
             />
           </div>
         </div>

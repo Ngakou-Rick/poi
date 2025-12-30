@@ -1,5 +1,4 @@
 import "../globals.css";
-import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import { ToastContainer } from "react-toastify";
@@ -8,16 +7,6 @@ import "leaflet/dist/leaflet.css";
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { locales } from '@/config';
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "CameroonPOI - Explore Cameroon's Points of Interest",
@@ -53,7 +42,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
+        className="antialiased flex flex-col min-h-screen"
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar locale={locale} />

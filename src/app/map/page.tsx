@@ -20,6 +20,8 @@ export default function MapPage() {
   const [selectedCategories, setSelectedCategories] = useState<PoiCategory[]>([]);
   const [highlightedPoi, setHighlightedPoi] = useState<PointOfInterest | null>(null);
   const [showAddForm, setShowAddForm] = useState(false);
+  const [selectingLocation, setSelectingLocation] = useState(false);
+  const [selectedLocation, setSelectedLocation] = useState<[number, number] | null>(null);
   const [mapCenter, setMapCenter] = useState<[number, number]>([7.3697, 12.3547]); // Default center of Cameroon
   const [mapZoom, setMapZoom] = useState(6);
   const [loading, setLoading] = useState(true);
@@ -75,6 +77,8 @@ export default function MapPage() {
   const handleAddPoi = (newPoi: PointOfInterest) => {
     setPois([newPoi, ...pois]);
     setShowAddForm(false);
+    setSelectingLocation(false);
+    setSelectedLocation(null);
     toast.success(`${t("map.poiAddedSuccess", { name: newPoi.name })}`);
     
     // Centrer la carte sur le nouveau POI
@@ -85,10 +89,30 @@ export default function MapPage() {
 
   const handleCancelAdd = () => {
     setShowAddForm(false);
+    setSelectingLocation(false);
+    setSelectedLocation(null);
   };
 
   const toggleAddForm = () => {
     setShowAddForm(!showAddForm);
+    setSelectingLocation(false);
+    setSelectedLocation(null);
+  };
+
+  const handleRequestSelectLocation = () => {
+    setSelectingLocation(true);
+    setHighlightedPoi(null);
+  };
+
+  const handleMapClickForLocation = (e: any) => {
+    if (!selectingLocation) return;
+    const lat = e.latlng?.lat;
+    const lng = e.latlng?.lng;
+    if (typeof lat !== "number" || typeof lng !== "number") return;
+    setSelectedLocation([lat, lng]);
+    setSelectingLocation(false);
+    setMapCenter([lat, lng]);
+    setMapZoom(12);
   };
 
   return (
@@ -134,7 +158,13 @@ export default function MapPage() {
         {/* Formulaire d'ajout ou panneau d'information */}
         {showAddForm ? (
           <div className="w-full md:w-1/3 p-4 overflow-y-auto">
-            <AddPoiForm onAddPoi={handleAddPoi} onCancel={handleCancelAdd} />
+            <AddPoiForm
+              onAddPoi={handleAddPoi}
+              onCancel={handleCancelAdd}
+              selectedLocation={selectedLocation}
+              selectingLocation={selectingLocation}
+              onRequestSelectLocation={handleRequestSelectLocation}
+            />
           </div>
         ) : highlightedPoi ? (
           <div className="w-full md:w-1/3 p-4 overflow-y-auto">
@@ -180,6 +210,7 @@ export default function MapPage() {
               pois={filteredPois}
               highlightedPoi={highlightedPoi}
               onPoiClick={handlePoiClick}
+              onMapClick={handleMapClickForLocation}
               center={mapCenter}
               zoom={mapZoom}
             />

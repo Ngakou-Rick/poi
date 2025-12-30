@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { mockPois, getNearbyPois } from "@/lib/data/mockData";
 import { PointOfInterest } from "@/lib/types";
 import { formatCoordinates, formatDate, getCategoryName, getCategoryIcon } from "@/lib/utils";
@@ -141,9 +142,14 @@ export default function PoiDetailPage() {
           {/* Main Image */}
           <div className="relative h-80 md:h-96 bg-gray-200 rounded-lg overflow-hidden">
             {poi.images && poi.images.length > 0 ? (
-              <div className="w-full h-full bg-gray-300 flex items-center justify-center">
-                <span className="text-6xl">{getCategoryIcon(poi.category)}</span>
-              </div>
+              <Image
+                src={poi.images[Math.min(activeImageIndex, poi.images.length - 1)]}
+                alt={poi.name}
+                fill
+                priority
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 66vw"
+              />
             ) : (
               <div className="w-full h-full flex items-center justify-center">
                 <span className="text-6xl">{getCategoryIcon(poi.category)}</span>
@@ -162,9 +168,13 @@ export default function PoiDetailPage() {
                   }`}
                   onClick={() => handleImageChange(index)}
                 >
-                  <div className="w-full h-full bg-gray-300 flex items-center justify-center">
-                    <span className="text-2xl">{getCategoryIcon(poi.category)}</span>
-                  </div>
+                  <Image
+                    src={image}
+                    alt={`${poi.name} - photo ${index + 1}`}
+                    fill
+                    className="object-cover"
+                    sizes="80px"
+                  />
                 </button>
               ))}
             </div>
@@ -198,7 +208,19 @@ export default function PoiDetailPage() {
                     className="flex items-center p-3 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors"
                   >
                     <div className="flex-shrink-0 h-12 w-12 bg-gray-200 rounded-md flex items-center justify-center mr-3">
-                      <span className="text-xl">{getCategoryIcon(nearbyPoi.category)}</span>
+                      {nearbyPoi.images && nearbyPoi.images.length > 0 ? (
+                        <div className="relative h-12 w-12">
+                          <Image
+                            src={nearbyPoi.images[0]}
+                            alt={nearbyPoi.name}
+                            fill
+                            className="object-cover"
+                            sizes="48px"
+                          />
+                        </div>
+                      ) : (
+                        <span className="text-xl">{getCategoryIcon(nearbyPoi.category)}</span>
+                      )}
                     </div>
                     <div>
                       <h3 className="font-medium text-gray-900">{nearbyPoi.name}</h3>

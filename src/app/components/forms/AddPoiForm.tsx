@@ -6,15 +6,22 @@ import * as Yup from "yup";
 import { PointOfInterest, PoiCategory } from "@/lib/types";
 import { generateUniqueId } from "@/lib/utils";
 import { toast } from "react-toastify";
-import MapComponent from "../map/MapComponent";
 
 interface AddPoiFormProps {
   onAddPoi: (poi: PointOfInterest) => void;
   onCancel: () => void;
+  selectedLocation: [number, number] | null;
+  selectingLocation: boolean;
+  onRequestSelectLocation: () => void;
 }
 
-const AddPoiForm = ({ onAddPoi, onCancel }: AddPoiFormProps) => {
-  const [selectedLocation, setSelectedLocation] = useState<[number, number] | null>(null);
+const AddPoiForm = ({
+  onAddPoi,
+  onCancel,
+  selectedLocation,
+  selectingLocation,
+  onRequestSelectLocation,
+}: AddPoiFormProps) => {
   const [previewImage, setPreviewImage] = useState<string | null>(null);
 
   const formik = useFormik({
@@ -55,14 +62,9 @@ const AddPoiForm = ({ onAddPoi, onCancel }: AddPoiFormProps) => {
       onAddPoi(newPoi);
       toast.success("Point d'intérêt ajouté avec succès!");
       formik.resetForm();
-      setSelectedLocation(null);
       setPreviewImage(null);
     },
   });
-
-  const handleMapClick = (e: any) => {
-    setSelectedLocation([e.latlng.lat, e.latlng.lng]);
-  };
 
   const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -184,13 +186,50 @@ const AddPoiForm = ({ onAddPoi, onCancel }: AddPoiFormProps) => {
             <label className="block text-sm font-medium text-gray-700 mb-1">
               Emplacement (cliquez sur la carte pour sélectionner)
             </label>
-            <div className="h-80 border border-gray-300 rounded-md overflow-hidden">
-              <MapComponent 
-                pois={[]}
-                center={[7.3697, 12.3547]} // Center of Cameroon
-                zoom={6}
-                onMapClick={handleMapClick}
-              />
+
+            <div className="flex items-center justify-end mb-3">
+              <button
+                type="button"
+                className={`px-3 py-2 rounded-md text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                  selectingLocation
+                    ? "bg-blue-50 text-blue-700 border border-blue-200"
+                    : "bg-blue-600 text-white hover:bg-blue-700"
+                }`}
+                onClick={onRequestSelectLocation}
+              >
+                {selectingLocation ? "Cliquez sur la grande carte" : "Définir sur la carte"}
+              </button>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-3">
+              <div>
+                <label htmlFor="latitude" className="block text-xs text-gray-500 mb-1">
+                  Latitude
+                </label>
+                <input
+                  id="latitude"
+                  name="latitude"
+                  type="text"
+                  readOnly
+                  value={selectedLocation ? selectedLocation[0].toFixed(6) : ""}
+                  placeholder="Sélectionnez un point sur la carte"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-50 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              <div>
+                <label htmlFor="longitude" className="block text-xs text-gray-500 mb-1">
+                  Longitude
+                </label>
+                <input
+                  id="longitude"
+                  name="longitude"
+                  type="text"
+                  readOnly
+                  value={selectedLocation ? selectedLocation[1].toFixed(6) : ""}
+                  placeholder="Sélectionnez un point sur la carte"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-50 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
             </div>
             {selectedLocation && (
               <div className="mt-2 text-sm text-gray-600">

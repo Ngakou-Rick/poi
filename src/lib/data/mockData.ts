@@ -7,7 +7,7 @@ export const mockPois: PointOfInterest[] = [
     description: "Le plus haut sommet d'Afrique de l'Ouest avec une altitude de 4040 mètres.",
     category: PoiCategory.NATURAL,
     coordinates: [4.2156, 9.1712],
-    images: ["/images/pois/mont-cameroun-1.jpg", "/images/pois/mont-cameroun-2.jpg", "/images/pois/mont-cameroun-3.jpg"],
+    images: ["/mont.jpeg", "/chemin.jpeg", "/Sans%20titre.jpeg"],
     details: "Le Mont Cameroun, également connu sous le nom de Mongo ma Ndemi (« Montagne de Grandeur »), est un volcan actif situé dans la région du Sud-Ouest. Il offre des randonnées spectaculaires à travers différents écosystèmes, de la forêt tropicale aux prairies alpines.",
     createdAt: "2023-01-15T10:30:00Z",
     updatedAt: "2023-01-15T10:30:00Z"
@@ -18,7 +18,7 @@ export const mockPois: PointOfInterest[] = [
     description: "Spectaculaire chute d'eau qui se jette directement dans l'océan Atlantique.",
     category: PoiCategory.NATURAL,
     coordinates: [2.8794, 9.8880],
-    images: ["/images/pois/chutes-lobe-1.jpg", "/images/pois/chutes-lobe-2.jpg"],
+    images: ["/chutes.jpeg", "/plage.jpeg", "/Sans%20titre.jpeg"],
     details: "Les Chutes de la Lobé sont un phénomène naturel rare où une rivière se jette directement dans l'océan. Situées près de Kribi, elles sont entourées d'une végétation luxuriante et sont considérées comme un site sacré par les populations locales.",
     createdAt: "2023-02-10T14:45:00Z",
     updatedAt: "2023-02-10T14:45:00Z"
@@ -29,7 +29,7 @@ export const mockPois: PointOfInterest[] = [
     description: "Palais royal historique situé à Foumban, centre culturel du peuple Bamoun.",
     category: PoiCategory.HISTORICAL,
     coordinates: [5.7290, 10.9027],
-    images: ["/images/pois/palais-bamoun-1.jpg", "/images/pois/palais-bamoun-2.jpg", "/images/pois/palais-bamoun-3.jpg"],
+    images: ["/musee.jpeg", "/marche.jpeg", "/Sans%20titre.jpeg"],
     details: "Construit en 1917, le Palais des Rois Bamoun est un témoignage de l'architecture traditionnelle et de l'histoire du royaume Bamoun. Il abrite également un musée avec des objets d'art et des artefacts historiques.",
     createdAt: "2023-03-05T09:15:00Z",
     updatedAt: "2023-03-05T09:15:00Z"
@@ -40,7 +40,7 @@ export const mockPois: PointOfInterest[] = [
     description: "L'un des parcs nationaux les plus célèbres du Cameroun, abritant une faune diverse.",
     category: PoiCategory.NATURAL,
     coordinates: [11.0000, 14.7500],
-    images: ["/images/pois/waza-1.jpg", "/images/pois/waza-2.jpg"],
+    images: ["/waza.jpeg", "/mont.jpeg", "/Sans%20titre.jpeg"],
     details: "Le Parc National de Waza, situé dans l'extrême nord du Cameroun, est une réserve de biosphère de l'UNESCO. Il abrite des lions, éléphants, girafes, antilopes et de nombreuses espèces d'oiseaux.",
     createdAt: "2023-04-20T11:30:00Z",
     updatedAt: "2023-04-20T11:30:00Z"
@@ -51,7 +51,7 @@ export const mockPois: PointOfInterest[] = [
     description: "Imposante cathédrale catholique située à Yaoundé.",
     category: PoiCategory.RELIGIOUS,
     coordinates: [3.8667, 11.5167],
-    images: ["/images/pois/cathedrale-yaounde-1.jpg"],
+    images: ["/cathedrale.jpeg", "/Sans%20titre.jpeg"],
     details: "Construite dans les années 1950, cette cathédrale est le siège de l'archidiocèse de Yaoundé. Son architecture mêle des éléments modernes et traditionnels africains.",
     createdAt: "2023-05-12T16:20:00Z",
     updatedAt: "2023-05-12T16:20:00Z"
@@ -62,7 +62,7 @@ export const mockPois: PointOfInterest[] = [
     description: "Principal musée du pays présentant l'histoire et la culture camerounaise.",
     category: PoiCategory.CULTURAL,
     coordinates: [3.8683, 11.5211],
-    images: ["/images/pois/musee-national-1.jpg", "/images/pois/musee-national-2.jpg"],
+    images: ["/musee.jpeg", "/Sans%20titre.jpeg"],
     details: "Le Musée National du Cameroun à Yaoundé présente des collections d'art, d'artefacts historiques et ethnographiques qui illustrent la riche diversité culturelle du pays.",
     createdAt: "2023-06-08T13:40:00Z",
     updatedAt: "2023-06-08T13:40:00Z"
@@ -73,7 +73,7 @@ export const mockPois: PointOfInterest[] = [
     description: "Magnifique plage de sable doré sur la côte atlantique.",
     category: PoiCategory.ENTERTAINMENT,
     coordinates: [2.9400, 9.9100],
-    images: ["/images/pois/kribi-1.jpg", "/images/pois/kribi-2.jpg", "/images/pois/kribi-3.jpg"],
+    images: ["/plage.jpeg", "/chutes.jpeg", "/Sans%20titre.jpeg"],
     details: "La plage de Kribi est réputée pour son sable doré, ses eaux claires et ses restaurants de fruits de mer. C'est une destination populaire pour la baignade, les sports nautiques et la détente.",
     createdAt: "2023-07-25T10:10:00Z",
     updatedAt: "2023-07-25T10:10:00Z"
@@ -84,7 +84,7 @@ export const mockPois: PointOfInterest[] = [
     description: "Site du patrimoine mondial de l'UNESCO, abritant une forêt tropicale dense.",
     category: PoiCategory.NATURAL,
     coordinates: [3.1667, 13.0000],
-    images: ["/images/pois/dja-1.jpg"],
+    images: ["/chemin.jpeg", "/mont.jpeg", "/Sans%20titre.jpeg"],
     details: "La Réserve de faune du Dja est l'une des plus grandes et des mieux protégées forêts pluviales d'Afrique. Elle abrite une biodiversité exceptionnelle, incluant des gorilles, chimpanzés et éléphants de forêt.",
     createdAt: "2023-08-17T15:30:00Z",
     updatedAt: "2023-08-17T15:30:00Z"
@@ -95,7 +95,7 @@ export const mockPois: PointOfInterest[] = [
     description: "Grand marché traditionnel offrant une variété de produits locaux.",
     category: PoiCategory.CULTURAL,
     coordinates: [4.0510, 9.7678],
-    images: ["/images/pois/marche-douala-1.jpg", "/images/pois/marche-douala-2.jpg"],
+    images: ["/marche.jpeg", "/gastro.jpeg", "/Sans%20titre.jpeg"],
     details: "Le marché central de Douala est un lieu animé où l'on peut découvrir l'artisanat local, les textiles, les épices et la gastronomie camerounaise. C'est un excellent endroit pour s'immerger dans la culture locale.",
     createdAt: "2023-09-05T09:45:00Z",
     updatedAt: "2023-09-05T09:45:00Z"
@@ -106,7 +106,7 @@ export const mockPois: PointOfInterest[] = [
     description: "Hôtel de luxe emblématique au cœur de la capitale.",
     category: PoiCategory.HOTEL,
     coordinates: [3.8750, 11.5174],
-    images: ["/images/pois/hilton-yaounde-1.jpg"],
+    images: ["/hilton.jpeg", "/Sans%20titre.jpeg"],
     details: "L'Hôtel Hilton Yaoundé est un établissement 5 étoiles offrant des chambres luxueuses, plusieurs restaurants, une piscine et des installations de conférence. Il est situé près des principales attractions de la ville.",
     createdAt: "2023-10-12T12:20:00Z",
     updatedAt: "2023-10-12T12:20:00Z"

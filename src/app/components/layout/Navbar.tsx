@@ -15,6 +15,8 @@ const Navbar = () => {
     { name: t("navigation.home"), path: "/" },
     { name: t("navigation.pois"), path: "/pois" },
     { name: t("navigation.map"), path: "/map" },
+    { name: t("navigation.blog"), path: "/blog" },
+    { name: t("navigation.podcast"), path: "/podcast" },
     { name: t("navigation.about"), path: "/about" },
   ];
 
@@ -23,12 +25,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md">
+    <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200 shadow-sm dark:bg-zinc-950/80 dark:border-zinc-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
-              <Link href="/" className="text-xl font-bold text-blue-600">
+              <Link href="/" className="text-xl font-extrabold tracking-tight text-slate-900 dark:text-zinc-50">
                 CameroonPOI
               </Link>
             </div>
@@ -37,10 +39,10 @@ const Navbar = () => {
                 <Link
                   key={item.path}
                   href={item.path}
-                  className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${
+                  className={`inline-flex items-center px-3 py-2 rounded-full text-sm font-medium transition-colors ${
                     isActive(item.path)
-                      ? "border-blue-500 text-gray-900"
-                      : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                      ? "bg-slate-900 text-white dark:bg-white dark:text-zinc-900"
+                      : "text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-zinc-300 dark:hover:text-zinc-50 dark:hover:bg-zinc-900"
                   }`}
                 >
                   {item.name}
@@ -48,14 +50,14 @@ const Navbar = () => {
               ))}
             </div>
           </div>
-          <div className="hidden sm:ml-6 sm:flex sm:items-center space-x-4">
+          <div className="hidden sm:ml-6 sm:flex sm:items-center space-x-3">
             <Link
               href="/map?action=add"
-              className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold shadow-sm text-white bg-slate-900 hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-400 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 mr-2"
+                className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -76,7 +78,7 @@ const Navbar = () => {
           <div className="-mr-2 flex items-center sm:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+              className="inline-flex items-center justify-center p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-400 dark:text-zinc-300 dark:hover:text-zinc-50 dark:hover:bg-zinc-900"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
@@ -121,15 +123,15 @@ const Navbar = () => {
       {/* Mobile menu */}
       {isMenuOpen && (
         <div className="sm:hidden">
-          <div className="pt-2 pb-3 space-y-1">
+          <div className="px-2 pb-4 pt-3 space-y-1">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 href={item.path}
-                className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium ${
+                className={`block rounded-lg px-3 py-2 text-base font-medium transition-colors ${
                   isActive(item.path)
-                    ? "bg-blue-50 border-blue-500 text-blue-700"
-                    : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
+                    ? "bg-slate-900 text-white dark:bg-white dark:text-zinc-900"
+                    : "text-slate-700 hover:bg-slate-100 dark:text-zinc-200 dark:hover:bg-zinc-900"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -138,7 +140,7 @@ const Navbar = () => {
             ))}
             <Link
               href="/map?action=add"
-              className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-blue-600 hover:bg-gray-50 hover:border-gray-300"
+              className="block rounded-lg px-3 py-2 text-base font-semibold text-slate-900 bg-slate-100 hover:bg-slate-200 dark:text-zinc-900 dark:bg-white dark:hover:bg-zinc-200"
               onClick={() => setIsMenuOpen(false)}
             >
               <div className="flex items-center">
@@ -161,9 +163,9 @@ const Navbar = () => {
             </Link>
             
             {/* Mobile Language Selector */}
-            <div className="pl-3 pr-4 py-2 border-l-4 border-transparent">
+            <div className="px-3 py-2">
               <div className="flex items-center justify-between">
-                <span className="text-gray-500">{t("language.selectLanguage")}:</span>
+                <span className="text-slate-500 dark:text-zinc-400">{t("language.selectLanguage")}: </span>
                 <LanguageSelector />
               </div>
             </div>
